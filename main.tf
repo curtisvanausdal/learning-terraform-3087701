@@ -28,7 +28,7 @@ resource "aws_instance" "web" {
   }
 }
 
-module "web" {
+module "web_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "5.1.0"
   name ="web_new"
